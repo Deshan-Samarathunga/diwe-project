@@ -1,0 +1,224 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Slab', serif !important;
+}
+
+body::before {
+	display: block;
+	content: '';
+}
+
+
+/* #allpage{
+
+		cursor: url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"), auto;
+	  	  
+} */
+/*-------------------------Navbar */
+.navbar {
+	transition: 0.9s;
+}
+
+.navbar:hover {
+	background-color: #3a5738;
+
+}
+
+.nav-item:hover {
+	font-weight: bolder;
+}
+
+#navmenu {
+	font-size: larger;
+
+}
+
+/* navbar titles hover animation */
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+}
+
+.hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	top: 35px;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.30s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/*----------------------------------------BG video */
+.box {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+
+}
+
+.box video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* image non selectable or draggable */
+.unselectable {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+img {
+	pointer-events: none;
+}
+
+/*===================================== Buttons */
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-outline-primary {
+	background-color: #3a5738 !important;
+	border: 2px solid white !important;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+	background-color: white !important;
+	color: black !important;
+	border: 2px solid black !important;
+}
+
+/* removing blue outline of buttons*/
+.btn {
+	box-shadow: none !important;
+	font-weight: bold !important;
+}
+
+.btn-close {
+	box-shadow: none !important;
+}
+
+.btn-light:hover {
+	background-color: #3a5738 !important;
+	border: 2px solid white !important;
+	color: white !important;
+	font-weight: bold !important;
+}
+.btn-light{
+	border: 2px solid black !important;
+}
+/*====================== sections */
+.caption {
+	text-align: center;
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#section02 {
+	background-color: #3a5738;
+}
+
+#learn {
+	background-color: #3a5738;
+}
+
+.accordion-item {
+	color: #3a5738 !important;
+}
+
+
+
+/* =================carousel */
+.ion-ios-arrow-forward,.ion-ios-arrow-back{
+	color: black !important;
+}
+.owl-dots>button.owl-dot.active{
+	background-color: #3a5738 !important;
+}
+ /*====================== footer */
+#footer {
+	background-color: #3a5738;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+
+}
+/* ===============accordion========== */
+
+
+
+/*----------------------------------------- modals */
+.modal-content,
+.modal-title {
+	font-weight: bold;
+	color: black !important;
+}
+
+/* blur when modal open */
+.modal-open .container-fluid,
+.modal-open .container {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px);
+}
+
+/*------------------------------------display resizing*/
+@media (min-width: 768px) {
+	.news-input {
+		width: 50%;
+	}
+
+	.logo {
+		width: 250px;
+	}
+}
+
+@media (max-width: 1000px) {
+	section {
+		padding: 100px 50px;
+	}
+
+	.logo {
+		width: 220px;
+	}
+}
+
+@media (max-width: 600px) {
+	section {
+		padding: 125px 30px;
+	}
+
+	.logo {
+		width: 200px;
+	}
+}
