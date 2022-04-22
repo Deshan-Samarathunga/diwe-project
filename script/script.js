@@ -110,6 +110,11 @@ $(".btn-primary").mouseup(function () {
     $(this).blur();
 })
 
+//close modal when press button
+$('#staff login').click(function() {
+    $('#login').modal('hide');
+});
+
 
 //When scrolling navbar appearance
 window.onscroll = function () { scrollFunction() };
